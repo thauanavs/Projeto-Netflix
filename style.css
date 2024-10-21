@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    position: relative;
+    padding-bottom: 100px;
+    padding-top: 20px;
+    overflow-x: hidden;
+}
+
+ul {
+    height: 25px;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    position: fixed;
+}
+
+.img-topo {
+    height: 25px;
+}
+
+video {
+    width: 100vw;
+    min-height: 80vh;
+    object-fit: cover; 
+}
+
+.capa {
+    position: absolute;
+    bottom: 25%;
+    left: 5%;
+    width: 35%;
+    z-index: 3;
+}
+
+.capa-titulo {
+    color: white;
+    font-size: 60px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.capa-descricao {
+    color: white;
+    font-size: 16px; 
+    margin-bottom: 20px;
+}
+
+.link-assistir {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.link-info {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.35);
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.imagem-carrossel {
+    max-height: 145px;
+    width: auto;
+}
+
+#carouselExampleControls {
+    background-color: transparent;
+    position: absolute;
+    margin-bottom: 20px;
+    left: 50px;
+}
+
+.titulo-carrossel {
+    color: white;
+    font-size: 20px; 
+    bottom: 10px;
+}
+
+.botao-som {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 4;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 5;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-conteudo {
+    background-color: #181818;
+    margin: 30px auto;
+    padding: 20px;
+    width: 90%; 
+    color: white;
+}
+
+
+@media (max-width: 767px) {
+    
+    
+    .capa {
+        width: 90%; 
+        left: 5%;
+        bottom: 20%;
+    }
+
+    .capa-titulo {
+        font-size: 40px; 
+    }
+
+    .capa-descricao {
+        font-size: 14px; 
+    }
+
+    .imagem-carrossel {
+        width: 100%; 
+        height: auto;
+        object-fit: contain; 
+        max-height: 200px;
+    
+    }
+
+    video {
+        width: 100vw;
+        height: 50vh; 
+        object-fit: cover; 
+    }
+
+    .botao-som {
+        top: 50px; 
+        right: 10px;
+    }
+
+    .modal-conteudo {
+        width: 90%; 
+    }
+}
+
+@media (min-width: 768px) {
+    
+    .capa {
+        width: 40%;
+    }
+
+    .capa-titulo {
+        font-size: 80px;
+    }
+
+    .capa-descricao {
+        font-size: 20px;
+    }
+
+    .imagem-carrossel {
+        height: 200px; 
+    }
+
+    video {
+        width: 100vw;
+        min-height: 80vh; 
+    }
+
+    .modal-conteudo {
+        width: 60%; 
+    }
+
+}
+
